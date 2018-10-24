@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_URL', '/');
+define('BASE_URL', 'http://localhost:8888/Projet/comem-archidep-php-todo-exercise/');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
 define('DB_NAME', 'todolist');
@@ -70,7 +70,7 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = 'SELECT * FROM `todo` order by todo.created_at asc'; // IMPLEMENT ME
+$selectQuery = 'SELECT * FROM `todo` order by todo.created_at desc'; // IMPLEMENT ME
 $items = $db->query($selectQuery);
 ?>
 
