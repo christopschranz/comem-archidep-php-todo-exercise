@@ -68,7 +68,7 @@ switch($_POST['action']) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = ''; // IMPLEMENT ME
+$selectQuery = 'SELECT * FROM `todo` order by todo.created_at asc'; // IMPLEMENT ME
 $items = $db->query($selectQuery);
 ?>
 
